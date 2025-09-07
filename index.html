@@ -1,103 +1,44 @@
----
-layout: default
----
-<div class="home">
-    <div class="full-hero hero-home">
-        <div class="hero-content">
-            <h1>Code dangerously</h1>
-            <ul class="social-list">
-                <li>
-                    <a href="https://facebook.com" class="social-link">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="home-callout">
-        <h1 class="callout-title">THE Story</h1>
-        <div class="callout-copy">
-            <p>
-                story of this website... why wouldya wanna know? <em>haha</em>
-            </p>
-            <p>
-                hmmm what to say what to say <strong>what</strong> what to say
-            </p>
-            <h3>Background</h3>
-            <p>
-                this website is about website
-            </p>
-        </div>
-    </div>
-    
-    <div class="home-section">
-        <h4>Most recent post</h4>
-        <div class="blog-posts">
-            <header class="post-header">
-                <h2>
-                    <a href="{{site.posts.first.url}}">
-                        {{site.posts.first.title}}
-                    </a>
-                </h2>
-                <div class="post-byline">
-                    <img src="{{site.posts.first.gravatar}}">
-                    <a href="{{site.posts.first.authorTwitter}}"
-                    class="social-link">Tw</a>
-                    by: {{site.posts.first.author}}
-                    <span> - {{site.posts.first.date | date: "%B %d, %Y" }}</span>
-                </div>
-            </header>
-            <div class="post-image"
-            style="background-image:url({{site.posts.first.postHero}})"></div>
-            {{site.posts.first.excerpt}}
-        </div>
-    </div>
-    <div class="home-section">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kyoma</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2rem; }
+    h1 { text-align: center; }
+    nav { text-align: center; margin-bottom: 2rem; }
+    nav a { margin: 0 1rem; text-decoration: none; color: #007acc; }
+    section { margin-bottom: 2rem; }
+    footer { text-align: center; font-size: 0.9rem; color: #555; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <h1>Kyoma</h1>
 
-        </div>
-        <h2>The FOUNDERS</h2>
-        <p>
-            this site was founded by Kyoma Shiki
-        </p>
-        <div class="bio-wrapper">
-            <div class="bio-box">
-                <h3>Kyoma Shiki</h3>
-                <a href="https://example.com/" class="social-link">Tw</a>
-                <div class="bio-copy">
-                    <p>
-                        He's just making a sample website right now, messing with HTML, CSS, etc...
-                    </p>
-                </div>
-                
-            </div>
-            <div class="bio-box">
-                <h3>??</h3>
-                <p>
-                    The Future.  I'll put some physics and math stuff here.
-                </p>
-                <p>
-                    This is my first website.  I'm not sure what it's going to be like yet.  I'm messing with html and css, etc here and there for now.
-                </p>
-                <p>
-                    I have some ideas of what to put on my website.  we'll see.
-                </p>
-                <h3>Background</h3>
-                <p>
-                    blah blach blah
-                </p>
-            </div>
-        </div>
-    </div>
+  <nav>
+    <a href="https://github.com/spiralk" target="_blank">GitHub</a>
+    <a href="https://medium.com/@yourusername" target="_blank">Blog</a>
+    <a href="sandbox/grid.html" target="_blank">Sandbox</a>
+  </nav>
 
-</div>
+  <section>
+    <h2>About Me</h2>
+    <p>PhD physicist | Maker of custom keyboards, WPF tools & simulations | Sharing insights in physics, math & lasers.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/spiralk/rubik_sim" target="_blank">Rubik Cube Simulation</a></li>
+      <li><a href="https://github.com/spiralk/qmk_firmware" target="_blank">Custom QMK Keyboard</a></li>
+      <!-- Add more projects here -->
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Kyoma
+  </footer>
+</body>
+</html>
